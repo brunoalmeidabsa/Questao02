@@ -18,5 +18,7 @@ def questao():
         i+=1
 
     soma_salario = 0
-        
+    for j in range(n):
+        soma_salario += empregados[j][2]
+    media_salario = soma_salario/n
 questao()       
