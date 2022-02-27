@@ -16,4 +16,7 @@ def questao():
         informacoes.append(salario)
         empregados.append(informacoes)
         i+=1
+
+    soma_salario = 0
+        
 questao()       
