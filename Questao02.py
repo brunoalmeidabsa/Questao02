@@ -24,4 +24,12 @@ def questao():
 
     for k in range(n):
         empregados[k].append(f'{diferenca_salario(empregados[k][2],media_salario)} %')
+
+    indice_maior_salario = 0
+    maior_salario = empregados[0][2]
+
+    for m in range(n):
+        if(maior_salario < empregados[m][2]):
+            maior_salario = empregados[m][2]
+            indice_maior_salario = m
 questao()       
