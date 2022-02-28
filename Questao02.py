@@ -21,4 +21,7 @@ def questao():
     for j in range(n):
         soma_salario += empregados[j][2]
     media_salario = soma_salario/n
+
+    for k in range(n):
+        empregados[k].append(f'{diferenca_salario(empregados[k][2],media_salario)} %')
 questao()       
