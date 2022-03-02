@@ -32,4 +32,6 @@ def questao():
         if(maior_salario < empregados[m][2]):
             maior_salario = empregados[m][2]
             indice_maior_salario = m
+
+    print("{:<8} {:<15} {:<10} {:<15}".format("Nome","Sexo","Salário","Diferença Percentual"))
 questao()       
