@@ -4,13 +4,13 @@ def diferenca_salario (salario, media_salario):
 
 def questao():
     i = 0
-    n = 2
+    n = 10
     empregados = []
     while (i < n):
         informacoes = []
-        nome = str(input('Digite o nome da {} pessoa: '.format(i+1))).strip
-        sexo = str.upper(input('Digite o sexo da {} pessoa [M/F]: '.format(i+1))).strip
-        salario = float(input('Digite o salário da {} pessoa: R$ '.format(i+1)))
+        nome = str(input('Digite o nome da {} pessoa: '.format(i+1)))
+        sexo = str.upper(input('Digite o sexo da {} pessoa [M/F]: '.format(i+1)))
+        salario = float(input('Digite o salário da {} pessoa R$'.format(i+1)))
         informacoes.append(nome)
         informacoes.append(sexo)
         informacoes.append(salario)
@@ -34,4 +34,10 @@ def questao():
             indice_maior_salario = m
 
     print("{:<8} {:<15} {:<10} {:<15}".format("Nome","Sexo","Salário","Diferença Percentual"))
+
+    for pessoa in empregados:
+        print("{:<8} {:<15} R$ {:<10.2f} {:<15}".format(pessoa[0],pessoa[1],pessoa[2],pessoa[3]))
+
+    print("{pessoa} tem o maior salário".format(pessoa=empregados[indice_maior_salario][0].capitalize()))
+    print("A média salarial é de: {}".format(media_salario))
 questao()       
