@@ -32,9 +32,4 @@ def questao():
         if(maior_salario < empregados[m][2]):
             maior_salario = empregados[m][2]
             indice_maior_salario = m
-
-    for m in range(n):
-        if(maior_salario < empregados[m][2]):
-            maior_salario = empregados[m][2]
-            indice_maior_salario = m
 questao()       
